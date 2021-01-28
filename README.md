@@ -1,7 +1,7 @@
 # Arma 3 Altis Life Calc
 ------------------------------------------------
+## Помошник для Arma 3 Altis Life (tested on Tactical Life)
 ## Качать только ***Arma 3 Altis Life Calc.exe*** , все остальное программные файлы.
-## Помошник для Arma 3 Altis Life (tested on Tactical Life)`
 -----------------------------------------
 Функции:
 1. Заметки только по теме Arma в одном месте
