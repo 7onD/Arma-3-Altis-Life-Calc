@@ -58,7 +58,7 @@ def bp():
 	final = get_res(all_butles, in_one_pack, res_price, vip_cash)
 	pg.alert(f"Вы заработаете {final}", "Done", button="Продолжить")
 
-
+#.setWindowIcon(QIcon('ref/calculator.ico'))
 calc.pushButton.clicked.connect(bp)
 menu.pushButton_2.clicked.connect(page_switch)
 menu.pushButton.clicked.connect(open_notes)

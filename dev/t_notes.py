@@ -59,5 +59,3 @@ def note():
 	# мб здесь указать парматер авто открытия
 	root.config(menu=menu_bar)
 	root.mainloop()
-
-note()
