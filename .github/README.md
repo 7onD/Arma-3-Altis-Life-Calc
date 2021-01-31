@@ -5,7 +5,7 @@
 1. Скачайте файл **ArmaHelper_Installer.exe**
 2. Проинсталируйте в удобную вам дерикторию
 3. После инсталяции в папке должно быть 4 файла:
-> Arma3 Helper.exe
+* Arma3 Helper.exe
 * Note_1.txt
 * Note_2.txt
 * Note_3.txt
