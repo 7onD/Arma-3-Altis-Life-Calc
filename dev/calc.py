@@ -11,10 +11,13 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-class Ui_Form(object):
+class Ui_Calc(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
         Form.resize(523, 422)
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("/ref/arma.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        Form.setWindowIcon(icon)
         Form.setStyleSheet("QWidget {\n"
 "    background-color: grey;\n"
 "}\n"

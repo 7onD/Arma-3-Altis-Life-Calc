@@ -15,6 +15,9 @@ class Ui_Menu(object):
     def setupUi(self, Menu):
         Menu.setObjectName("Menu")
         Menu.resize(536, 399)
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("../ref/arma.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        Menu.setWindowIcon(icon)
         Menu.setAutoFillBackground(False)
         Menu.setStyleSheet("background-color:grey")
         self.label = QtWidgets.QLabel(Menu)
@@ -37,6 +40,13 @@ class Ui_Menu(object):
         self.pushButton_2.setFont(font)
         self.pushButton_2.setStyleSheet("background-color:white;")
         self.pushButton_2.setObjectName("pushButton_2")
+        self.pushButton_3 = QtWidgets.QPushButton(Menu)
+        self.pushButton_3.setGeometry(QtCore.QRect(130, 300, 261, 81))
+        font = QtGui.QFont()
+        font.setPointSize(18)
+        self.pushButton_3.setFont(font)
+        self.pushButton_3.setStyleSheet("background-color:white;")
+        self.pushButton_3.setObjectName("pushButton_3")
 
         self.retranslateUi(Menu)
         QtCore.QMetaObject.connectSlotsByName(Menu)
@@ -47,6 +57,7 @@ class Ui_Menu(object):
         self.label.setText(_translate("Menu", "ARMA 3 HELPER"))
         self.pushButton.setText(_translate("Menu", "Заметки"))
         self.pushButton_2.setText(_translate("Menu", "Калькулятор"))
+        self.pushButton_3.setText(_translate("Menu", "База ресурсов"))
 
 
 if __name__ == "__main__":

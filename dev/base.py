@@ -1,33 +1,33 @@
 import pyautogui as pg
 import time
-import eel
 from PyQt5 import QtCore, QtGui, QtWidgets
 import sys
-from calc import Ui_Form
-from menu import Ui_Menu
-from tkinter import *
-from tkinter import messagebox
-from tkinter.filedialog import askopenfile, asksaveasfile
-from t_notes import note
+from base_if import Ui_Form
 
-	# call base page
-app = QtWidgets.QApplication(sys.argv)
-Form = QtWidgets.QWidget()
-ui = Ui_Form()
-ui.setupUi(Form)
-Form.show()
+def base():
+		# call base page
+    app = QtWidgets.QApplication(sys.argv)
+    Form = QtWidgets.QWidget()
+    ui = Ui_Form()
+    ui.setupUi(Form)
+    Form.show()
 
-	# base
-base = {
-	"Ресурс":"Описание"
-}
+    	#base
+    alc = 'является нелегальным ресурсом, для создания которого необходимо наличие рецепта ( он покупается у главаря банды Атиры за 3000 репутации ), для создания необходимо (кукуруза, яблоки, стеклянная бутылка, дрожжи - по одной штуке каждого). Для упаковки одной ящика нужно 50 бутылок.'
+    base = {
+    "алкоголь":alc
+    }
 
-	# code
-def base_page():
-	res_name = int(Form.lineEdit.text()).lower()
-	res_info = base[f'{res_name}']
+		# code
+    def base_page():
+        res_name = (ui.lineEdit.text())
+        res_info = base[f'{res_name}']
 
-	pg.alert(f"Информация o {res_name} : \n {res_info}", "Done", button="Продолжить")
+        pg.alert(f"Информация o {res_name} : \n {res_info}", "Done", button="Продолжить")
 
-	# close menu page
-sys.exit(app.exec_())
+    ui.pushButton.clicked.connect(base_page)
+
+		# close menu page
+    sys.exit(app.exec_())
+
+base()

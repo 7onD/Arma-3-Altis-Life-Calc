@@ -15,6 +15,9 @@ class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
         Form.resize(573, 190)
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("/ref/arma.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        Form.setWindowIcon(icon)
         Form.setStyleSheet("background-color: grey;")
         self.label = QtWidgets.QLabel(Form)
         self.label.setGeometry(QtCore.QRect(90, 10, 441, 51))
@@ -50,12 +53,3 @@ class Ui_Form(object):
         self.label_2.setText(_translate("Form", "Введите название ресурса:"))
         self.pushButton.setText(_translate("Form", "Найти"))
 
-
-if __name__ == "__main__":
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    Form = QtWidgets.QWidget()
-    ui = Ui_Form()
-    ui.setupUi(Form)
-    Form.show()
-    sys.exit(app.exec_())
