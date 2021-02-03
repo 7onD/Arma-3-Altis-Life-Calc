@@ -39,6 +39,14 @@ class Ui_Form(object):
         self.pushButton.setFont(font)
         self.pushButton.setStyleSheet("background-color: white;")
         self.pushButton.setObjectName("pushButton")
+        self.pushButton_2 = QtWidgets.QPushButton(Form)
+        self.pushButton_2.setGeometry(QtCore.QRect(460, 100, 101, 31))
+        self.pushButton_2.setStyleSheet("background-color: rgb(255, 255, 255);")
+        self.pushButton_2.setObjectName("pushButton_2")
+        self.pushButton_3 = QtWidgets.QPushButton(Form)
+        self.pushButton_3.setGeometry(QtCore.QRect(460, 140, 101, 31))
+        self.pushButton_3.setStyleSheet("background-color: rgb(255, 255, 255);")
+        self.pushButton_3.setObjectName("pushButton_3")
 
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
@@ -49,6 +57,8 @@ class Ui_Form(object):
         self.label.setText(_translate("Form", "База всех ресурсов"))
         self.label_2.setText(_translate("Form", "Введите название ресурса:"))
         self.pushButton.setText(_translate("Form", "Найти"))
+        self.pushButton_2.setText(_translate("Form", "FAQ"))
+        self.pushButton_3.setText(_translate("Form", "Для новичков"))
 
 
 if __name__ == "__main__":
