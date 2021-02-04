@@ -1,6 +1,6 @@
 # Arma 3 Helper
 ------------------------------------------------
-## Помощник для Arma 3 Altis Life (tested on Tactical Life)
+## Помощник для Arma 3 Altis Life (tested on [Tactical Life](https://forum.tactical-life.ru/))
 Инструкция:
 1. Скачайте архив **ArmaHelper.rar**
 2. Проинсталлируйте в удобную вам директорию
