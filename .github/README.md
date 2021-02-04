@@ -20,6 +20,7 @@
 (Файл может открываться долго, учтите.)
 
 -----------------------------------------
+_Product created by  [7onD](https://github.com/7onD) and [sem36](https://github.com/sem36)_
 
 
 ![screenshot of sample](https://cdn.cloudflare.steamstatic.com/steam/apps/107410/capsule_616x353.jpg?t=1608211055)
